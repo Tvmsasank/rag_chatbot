@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Premium AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ICFAI LOGO -->
+   <div class="main-logo">
+    <img src="assets/icfai-logo.png" alt="ICFAI-logo">
+   </div>
+
+<!-- FLOAT BUTTON -->
+
+<button class="chat-toggle" onclick="toggleChat()">
+  💬
+</button>
+
+<!-- CHAT WINDOW -->
+
+<div class="chat-wrapper" id="chatWindow">
+
+  <!-- HEADER -->
+
+  <div class="chat-header">
+
+    <div class="header-left">
+
+      <div class="bot-avatar">
+        🤖
+      </div>
+
+      <div class="bot-info">
+        <h2>University AI</h2>
+        <p>Always online</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CHAT -->
+
+  <div class="chat-box" id="chat">
+
+    <!-- WELCOME -->
+
+    <div class="msg bot">
+      👋 Welcome to University AI Assistant.
+      <br><br>
+      I can help you with:
+      <br><br>
+
+      • Fees Due
+      <br>
+      • Attendance
+      <br>
+      • Exam Results
+      <br>
+      • Assignments
+      <br>
+      • Scholarship Status
+      <br>
+      • Library Details
+    </div>
+
+    <!-- QUICK ACTIONS -->
+
+    <div class="quick-actions">
+
+      <button onclick="quickAsk('Check my fees due')">
+        💰 Fees
+      </button>
+
+      <button onclick="quickAsk('Show my attendance')">
+        📊 Attendance
+      </button>
+
+      <button onclick="quickAsk('Show my exam result')">
+        📝 Results
+      </button>
+
+      <button onclick="quickAsk('Show my assignments')">
+        📚 Assignments
+      </button>
+
+      <button onclick="quickAsk('Show my scholarship status')">
+        🎓 Scholarship
+      </button>
+
+      <button onclick="quickAsk('Show my library books')">
+        📖 Library
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- INPUT -->
+
+  <div class="input-area">
+
+    <input
+      type="text"
+      id="q"
+      placeholder="Ask anything..."
+      onkeydown="handleKey(event)"
+    >
+
+    <button class="send-btn" onclick="ask()">
+      ➤
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
